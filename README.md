@@ -3,21 +3,24 @@
 
 Integrates CLEditor into Rails 3.1+ asset pipeline
 
-Url: http://premiumsoftware.net/cleditor/
+Forked for latest (for now) version of source at: http://premiumsoftware.net/cleditor/
+
+Includes "Advanced Table Plug-in Version 1.0.1".
+
+Also changed version of this gem to be the same as the CLEditor version.
+
+Also also required small changes to JS and CSS files to fix paths so they point to
+asset pipeline.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'cleditor-rails'
+    gem "cleditor-rails", :git => "https://github.com/Promptus/cleditor-rails.git"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install cleditor-rails
 
 ## Usage
 

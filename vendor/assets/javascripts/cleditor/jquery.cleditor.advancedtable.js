@@ -1,5 +1,5 @@
-﻿/**
- @preserve CLEditor Advanced Table Plugin v1.0.0
+﻿/*!
+ CLEditor Advanced Table Plugin v1.0.1
  http://premiumsoftware.net/cleditor
  requires CLEditor v1.2.2 or later
  
@@ -8,11 +8,6 @@
 
  Based on Chris Landowski's Table Plugin v1.0.2
 */
-
-// ==ClosureCompiler==
-// @compilation_level SIMPLE_OPTIMIZATIONS
-// @output_file_name jquery.cleditor.advancedtable.min.js
-// ==/ClosureCompiler==
 
 (function($) {
 
@@ -26,14 +21,14 @@
     popupClass: "cleditorPrompt",
     popupContent:
       "<table cellpadding=0 cellspacing=0><tr>" +
-      "<td style=\"padding-right:6px;\">Cols:<br /><input type=text value=4 size=12 /></td>" +
-      "<td style=\"padding-right:6px;\">Rows:<br /><input type=text value=4 size=12 /></td>" +
+      "<td style=\"padding-right:6px;\">Cols:<br /><input type=text value=4 style='width:60px' /></td>" +
+      "<td style=\"padding-right:6px;\">Rows:<br /><input type=text value=4 style='width:60px' /></td>" +
       "</tr><tr>" +
-      "<td style=\"padding-right:6px;\">Cell Spacing:<br /><input type=text value=2 size=12 /></td>" +
-      "<td style=\"padding-right:6px;\">Cell Padding:<br /><input type=text value=2 size=12 /></td>" +
+      "<td style=\"padding-right:6px;\">Cell Spacing:<br /><input type=text value=2 style='width:60px' /></td>" +
+      "<td style=\"padding-right:6px;\">Cell Padding:<br /><input type=text value=2 style='width:60px' /></td>" +
       "</tr><tr>" +
-      "<td style=\"padding-right:6px;\">Border:<br /><input type=text value=1 size=12 /></td>" +
-      "<td style=\"padding-right:6px;\">Style (CSS):<br /><input type=text size=12 /></td>" +
+      "<td style=\"padding-right:6px;\">Border:<br /><input type=text value=1 style='width:60px' /></td>" +
+      "<td style=\"padding-right:6px;\">Style (CSS):<br /><input type=text style='width:60px' /></td>" +
       "</tr></table><br /><input type=button value=Submit  />",
     buttonClick: tableButtonClick
   };
@@ -72,7 +67,7 @@
         var html;
         if (cols > 0 && rows > 0) {
           html = "<table border=" + border + " cellpadding=" + padding +
-            " cellspacing=" + spacing +
+            " cellspacing=" + spacing + 
             (styles ? ' style="' + styles + '"' : "") + ">";
           for (y = 0; y < rows; y++) {
             html += "<tr>";

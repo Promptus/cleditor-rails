@@ -1,5 +1,5 @@
 module Cleditor
   module Rails
-    VERSION = "0.1.1"
+    VERSION = "1.4.4"
   end
 end
