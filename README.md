@@ -5,9 +5,12 @@ Integrates CLEditor into Rails 3.1+ asset pipeline
 
 Forked for latest (for now) version of source at: http://premiumsoftware.net/cleditor/
 
-Includes "Advanced Table Plug-in Version 1.0.1".
+Includes "Table Plug-in Version 1.0.3".
 
 Also changed version of this gem to be the same as the CLEditor version.
+
+(Except: Right now we're on 1.4.4.1 because we needed to switch away from the advanced table editor plugin
+to the normal one for better IE support)
 
 Also also required small changes to JS and CSS files to fix paths so they point to
 asset pipeline.

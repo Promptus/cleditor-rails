@@ -19,7 +19,7 @@ module Cleditor
 
       def insert_style(file_name)
         if File.exist?(file_name)
-          style_require_block = " *= require cleditor/cleditor\n"
+          style_require_block = " *= require cleditor/jquery.cleditor\n"
           insert_into_file file_name, style_require_block, :after => "require_self\n"
         else
           if file_name == "app/assets/stylesheets/application.css"
@@ -32,7 +32,7 @@ module Cleditor
 
       def insert_javascript(file_name)
         if File.exist?(file_name)
-          insert_into_file file_name, "//= require cleditor/cleditor\n//= require cleditor/jquery.cleditor.advancedtable\n", :after => "jquery_ujs\n"
+          insert_into_file file_name, "//= require cleditor/jquery.cleditor\n//= require cleditor/jquery.cleditor.table\n", :after => "jquery_ujs\n"
         else
           if file_name == "app/assets/javascripts/application.js"
             unless File.exist?("app/assets/stylesheets/application.js.coffee")
